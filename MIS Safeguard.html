@@ -53,39 +53,37 @@
             padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
             font-weight: 500;
-            color: #000000; /* Changed text colour to black */
-            background-color: #e5e7eb; /* Changed background colour to light grey */
+            color: #000000;
+            background-color: #e5e7eb;
             cursor: pointer;
             transition: background-color 0.3s ease;
             font-size: 1.1rem;
-            border: 1px solid #d1d5db; /* Added a border */
+            border: 1px solid #d1d5db;
             margin-top: 1rem;
             display: inline-block;
         }
         .button:hover {
-            background-color: #f9fafb; /* Lighter background on hover */
+            background-color: #f9fafb;
             border-color: #d1d5db;
         }
         .quiz-button {
-            background-color: #e5e7eb; /* Changed quiz button to light grey */
+            background-color: #e5e7eb;
         }
         .quiz-button:hover {
             background-color: #f9fafb;
         }
         .glossary-button {
-            background-color: #e5e7eb; /* Changed glossary button to light grey */
+            background-color: #e5e7eb;
         }
         .glossary-button:hover {
             background-color: #f9fafb;
         }
         .reflection-button {
-            background-color: #e5e7eb; /* Changed reflection button to light grey */
+            background-color: #e5e7eb;
         }
         .reflection-button:hover {
             background-color: #f9fafb;
         }
-
-        /* Styles for the glossary table */
         .glossary-table {
             width: 100%;
             border-collapse: collapse;
@@ -94,41 +92,35 @@
             border-radius: 0.5rem;
             overflow: hidden;
         }
-
         .glossary-table thead {
             background-color: #f7fafc;
         }
-
         .glossary-table th, .glossary-table td {
             padding: 1rem;
             text-align: left;
             border-bottom: 1px solid #e5e7eb;
         }
-
         .glossary-table th {
             font-weight: 600;
             color: #4b5563;
         }
-
-        .glossary-table tbody tr:hover {
-            background-color: #f0f0f0;
+        .glossary-table tbody tr:nth-child(even) {
+            background-color: #f0f0f0; /* Alternating row colors */
         }
-
         .glossary-table td:last-child {
             color: #007bff;
             text-decoration: none;
         }
-
         .glossary-table td:last-child:hover {
             text-decoration: underline;
         }
-
-
     </style>
 </head>
-<body class="bg-gray-100"> <div class="container">
+<body class="bg-gray-100">
+    <div class="container">
         <header class="text-center py-4">
-            <h1 class="text-3xl font-semibold text-gray-800">MIS Safeguard Training</h1> </header>
+            <h1 class="text-3xl font-semibold text-gray-800">MIS Safeguard Training</h1>
+        </header>
         <main>
             <section class="module-section">
                 <h2>Introduction and Welcome</h2>
@@ -146,23 +138,20 @@
                     <li>Introduction and Welcome</li>
                     <li>MIS Safeguard Quiz</li>
                     <li>Glossary of Key Terms</li>
+                    <li>Reflection Activity</li>
                 </ol>
                 <p>Please complete each section in order. The quiz will assess your understanding of the material, and the reflection activity will help you apply what you've learnt to your daily practice.</p>
                 <a href="#mis_safeguard_quiz" class="button quiz-button">Take the Quiz</a>
+                <a href="#reflection_activity" class="button reflection-button">Reflection Activity</a>
             </section>
-
             <section id="mis_safeguard_quiz" class="module-section">
                 <h2>MIS Safeguard Quiz</h2>
-                <p>This quiz will assess your understanding of the key principles and procedures outlined in the MIS Child Protection and Safeguarding Policy and the MIS Anti-Bullying Policy.</p>
-                <p>You will have [Number] minutes to complete the quiz. The quiz consists of [Number] multiple-choice questions. Choose the best answer for each question. You will receive immediate feedback after submitting each answer. You can take the quiz [Number] times.</p>
-                <p>(Quiz questions and submission would be handled by Canvas, this is a placeholder)</p>
+                <p>The quiz will be available through the Canvas Learning Management System.</p>
             </section>
-
             <section class="module-section">
                 <h2>Post-Quiz</h2>
-                 <a href="#glossary_of_key_terms" class="button glossary-button">View Glossary</a>
+                <a href="#glossary_of_key_terms" class="button glossary-button">View Glossary</a>
             </section>
-
             <section id="glossary_of_key_terms" class="module-section">
                 <h2>Glossary of Key Terms</h2>
                 <p>The following terms are defined as they are used in the MIS Child Protection and Safeguarding Policy and the MIS Anti-Bullying Policy:</p>
@@ -178,75 +167,70 @@
                         <tr>
                             <td>Abuse</td>
                             <td>The maltreatment of a child in any form.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 6</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 6">MIS Child Protection and Safeguarding Policy, Section 6</a></td>
                         </tr>
                         <tr>
                             <td>Bullying</td>
                             <td>Persistent behaviour by an individual or group with the intention of verbally, physically, or emotionally harming another person or group.</td>
-                            <td><a href="#">MIS Anti-Bullying Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Anti-Bullying Policy, Section 2">MIS Anti-Bullying Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Child Protection</td>
                             <td>The protection of children from violence, exploitation, abuse, and neglect.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td>Designated Safeguarding Lead (DSL)</td>
                             <td>The head of our school's Safeguarding Team.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Guardian/s</td>
                             <td>Any individual involved in the care of a child outside of school hours.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Harm</td>
                             <td>Impairment of the health, safety or development of a child.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 1</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 1">MIS Child Protection and Safeguarding Policy, Section 1</a></td>
                         </tr>
                         <tr>
                             <td>Neglect</td>
                             <td>The failure to provide for a child’s basic needs.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 6</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 6">MIS Child Protection and Safeguarding Policy, Section 6</a></td>
                         </tr>
                         <tr>
-                           <td>Safeguarding</td>
+                            <td>Safeguarding</td>
                             <td>The action that is taken to promote the welfare of children and protect them from harm.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Senior Management Team</td>
                             <td>Head of School, Deputy Head of School, Heads of Sections (Early Years, Primary and Secondary), Head of Personnel and School Coordinator.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Vulnerable Pupils</td>
                             <td>Pupils who are more likely to be targets of bullying.</td>
-                            <td><a href="#">MIS Anti-Bullying Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Anti-Bullying Policy, Section 2">MIS Anti-Bullying Policy, Section 2</a></td>
                         </tr>
                         <tr>
                             <td>Welfare</td>
                             <td>The physical, emotional, mental, and general well-being of a child, both at school and in other environments.</td>
-                            <td><a href="#">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
+                            <td><a href="#" aria-label="MIS Child Protection and Safeguarding Policy, Section 2">MIS Child Protection and Safeguarding Policy, Section 2</a></td>
                         </tr>
                     </tbody>
                 </table>
+            </section>
+            <section id="reflection_activity" class="module-section">
+                <h2>Reflection Activity</h2>
+                <p>Please reflect on how you can apply the principles of child protection and safeguarding in your daily interactions with students. Consider specific scenarios and how you would respond.</p>
+                <p>You can write your reflections in a document and submit it to your supervisor.</p>
             </section>
         </main>
         <footer class="text-center py-4 text-gray-600">
             <p>© 2025 Mooltripakdee International School. All rights reserved.</p>
         </footer>
     </div>
-<script>
-    //This script adds functionality for dynamically showing quiz questions.  Since this is a placeholder
-    // for a Canvas module, the actual quiz functionality would be handled by Canvas.
-    document.addEventListener('DOMContentLoaded', () => {
-        const quizSection = document.getElementById('mis_safeguard_quiz');
-        if (quizSection) {
-            quizSection.innerHTML = `<p>The quiz functionality would be handled by the Canvas Learning Management System.</p>`;
-        }
-    });
-</script>
 </body>
 </html>
